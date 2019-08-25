@@ -14,6 +14,8 @@ personFinder = new PeopleFinder(socket);
 
 // p5 draw
 function draw() {
+  // deltaPeople is a delta between the 2 last position(this makes the posenet updates delayed)
+  // if you want the latest results you can access presonFinder.currentPeople
   personFinder.deltaPeople().forEach(person => {
     // draw a person (for debugging)
     person.draw();
