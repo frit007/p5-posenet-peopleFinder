@@ -4,6 +4,7 @@
 To make it easy to use, the library assumes p5 is available.
 - socket.io
 - p5
+- posenet (recommend runway install https://runwayml.com/)
 
 # Usage
 ```
