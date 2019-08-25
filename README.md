@@ -1,10 +1,10 @@
-﻿# p5-posenet-peopleFinder
+# p5-posenet-peopleFinder
 
-## depends on
+## Depends on
 To make it easy to use, the library assumes p5 is available.
 - socket.io
 - p5
-- posenet (recommend runway install https://runwayml.com/)
+- posenet (recommended runway install https://runwayml.com/)
 
 # Usage
 ```
@@ -23,7 +23,7 @@ function draw() {
   })
 }
 ```
-# Person Points
+## Person Points
 Every point it p5.vector (https://p5js.org/reference/#/p5.Vector)
 
 Peron points taken from https://github.com/tensorflow/tfjs-models/blob/master/posenet/README.md
