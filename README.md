@@ -50,4 +50,5 @@ Peron points taken from https://github.com/tensorflow/tfjs-models/blob/master/po
 | leftAnkle |
 | rightAnkle |
 
-
+## Quirks
+Since personfinder cannot tell which person is who, it sorts them based on their nose position.
