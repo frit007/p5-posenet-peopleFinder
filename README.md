@@ -8,9 +8,14 @@ To make it easy to use, the library assumes p5 is available.
 
 # Usage
 ```
+let personFinder;
+
+function setup() {
 // connect to the runway port
-socket = io.connect("http://localhost:3000");
-personFinder = new PeopleFinder(socket);
+  let socket = io.connect("http://localhost:3000");
+
+  personFinder = new PeopleFinder(socket);
+}
 
 // p5 draw
 function draw() {
