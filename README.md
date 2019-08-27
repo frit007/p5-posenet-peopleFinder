@@ -8,20 +8,20 @@ To make it easy to use, the library assumes p5 is available.
 
 # Usage
 ```
-let personFinder;
+let peopleFinder;
 
 function setup() {
 // connect to the runway port
   let socket = io.connect("http://localhost:3000");
 
-  personFinder = new PeopleFinder(socket);
+  peopleFinder = new PeopleFinder(socket);
 }
 
 // p5 draw
 function draw() {
   // deltaPeople is a delta between the 2 last position(this makes the posenet updates delayed)
   // if you want the latest results you can access presonFinder.currentPeople
-  personFinder.deltaPeople().forEach(person => {
+  peopleFinder.deltaPeople().forEach(person => {
     // draw a person (for debugging)
     person.draw();
     
@@ -56,4 +56,4 @@ Peron points taken from https://github.com/tensorflow/tfjs-models/blob/master/po
 | rightAnkle |
 
 ## Quirks
-Since personfinder cannot tell which person is who, it sorts them based on their nose position.
+Since peopleFinder cannot tell which person is who, it sorts them based on their nose position.
